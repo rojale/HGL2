@@ -126,17 +126,26 @@ div.banner {
 	background-position: center;
 	text-align:center;
 }
+
+div.bannersmall {
+	width:100%;
+	min-width:650px;
+	height:500px;
+	background-position: center;
+	text-align:center;
+}
+
 div.bannertext {
 	text-align: center;
-	padding-top:150px;
-	width:85%;
+	padding-top:100px;
+	padding-bottom:25px;
+	width:70%;
 	margin-left:auto;
 	margin-right:auto;
 }
 p.bannermaintext {
 	color:white;
 	font-size:50px;
-	text-decoration: underline;
 	padding:0;
 	margin:0;
 	min-width:500px;
@@ -251,9 +260,14 @@ div.maincontent2wrap {
 	text-align:left;
 }
 .maincontent2 h1 {
+	padding-top:25px;
 	text-decoration:underline;
+	font-size:50px;
 }
 .maincontent2 p {
+}
+.maincontent2wrap h1{
+	font-size:35px;
 }
 .maincontent2 input {
 	border-radius:3px;
@@ -306,6 +320,7 @@ div.formbuttonwrap{
 .maincontent2 h2 {
 	text-align:left;
 	padding-top:10px;
+	font-size:25px;
 }
 .maincontent .largetext {
 
