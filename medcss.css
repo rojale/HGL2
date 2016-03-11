@@ -122,7 +122,7 @@ ul.firstddlist {
 div.banner {
 	width:100%;
 	min-width:650px;
-	height:560px;
+	height:500px;
 	background-position: center;
 	text-align:center;
 }
@@ -202,7 +202,6 @@ div.maincontent {
 	margin-right:auto;
 }
 .maincontent h1 {
-	color: #ff8d1a;
 	text-decoration: underline;
 	font-size:30px;
 
@@ -299,6 +298,11 @@ button.formbutton {
 	font-family: 'Montserrat', sans-serif;
 	cursor:pointer;
 	cursor:hand;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .formbutton:focus {
 	outline:none;
@@ -328,4 +332,47 @@ div.formbuttonwrap{
 img.screenshot {
 	width:100%;
 	height:auto;
+}
+div.bigwidth {
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+div.bigwidthcenter {
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1500px;
+}
+
+.bigwidth h1 {
+	font-size:50px;
+	text-decoration:underline;
+}
+div.columnwrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+div.leftcolumn {
+	float:left;
+	width:400px;
+	
+}
+div.rightcolumn {
+	float:right;
+	width:400px;
+	
+}
+div.columnimg {
+	height:200px;
+}
+.columnimg img {
+	height:100%;
+	width:auto;
+}
+img.columnmidpic {
+	height:200px;
+	width:auto;
+	
 }
