@@ -282,6 +282,11 @@ button.formbutton {
 	font-family: 'Montserrat', sans-serif;
 	cursor:pointer;
 	cursor:hand;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .formbutton:focus {
 	outline:none;
@@ -310,4 +315,48 @@ div.formbuttonwrap{
 img.screenshot {
 	width:100%;
 	height:auto;
+}
+
+div.bigwidth {
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+div.bigwidthcenter {
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1500px;
+}
+
+.bigwidth h1 {
+	font-size:50px;
+	text-decoration:underline;
+}
+div.columnwrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+div.leftcolumn {
+	float:left;
+	width:400px;
+	text-align:left;
+}
+div.rightcolumn {
+	float:right;
+	width:400px;
+	text-align:right;
+}
+div.columnimg {
+	height:200px;
+}
+.columnimg img {
+	height:100%;
+	width:auto;
+}
+img.columnmidpic {
+	height:200px;
+	width:auto;
+	float:left;
 }
