@@ -6,9 +6,33 @@
 		<link rel="stylesheet" media='screen and (max-width: 649px)' type="text/css" href="mobilecss.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
+		<script>
+		//dummy standings table
+		var standings=[
+		["Bill","12345","1"],
+		["Harry","12567","24"],
+		["joey","5543","3"],
+		["hilary","4452","34"],
+		["Bill","12345","1"],
+		["Harry","12567","24"],
+		["joey","5543","3"],
+		["hilary","4452","34"],
+		["Bill","12345","1"],
+		["Harry","12567","24"],
+		["joey","5543","3"],
+		["hilary","4452","34"]
+		];
+			function loadtable(){
+				var table1=document.getElementById("table1");
+				var table2=document.getElementById("table2");
+				for (i=0;i<standings.length/2;i++){
+					table1.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>'+standings[i][2]+'</td></tr>';
+				}
+			}
+		</script>
 	</head>
 
-	<body class="primary">
+	<body class="primary" onload="loadtable()">
 		<div class="navbar">
 			<div class="navleft">
 				<p id="navhgl"> HEARTH GAMING LEAGUE</p>
@@ -50,10 +74,16 @@
 				<div class="maincontent2wrap">
 					<br>
 					<br>
-					<table>
-						<tr><td>Player</td><td>Battlefy ID</td><td>Points</td></tr>
-						<tr><td> bob</td><td>12382</td><td>5</td></tr>
-					</table>
+					<div class="columnwrapper2">
+						<div class="leftcolumn2">
+							<table class="standingstable" id="table1">
+							</table>
+						</div>
+						<div class="rightcolumn2">
+							<table class="standingstable" id="table2">
+							</table>
+						</div>
+					</div>
 				</div>
 
 
