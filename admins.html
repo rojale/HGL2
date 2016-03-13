@@ -62,53 +62,53 @@
 						<li>Extensive understanding and knowledge of Hearthstone and  its community</li>
 					</ul>
 					<hr>
-					<table>
-						<tr>
-							<td> Name* </td>
-						</tr>
-						<tr>
-							<td> <input type="text"></input></td>
-						</tr>
-					</table>
-					<br>
-					<table>
-						<tr>
-							<td>Email*</td>
-						</tr>
-						<tr>
-							<td> <input type="text"></input></td>
-						</tr>
-					</table>
-					<br>
-					<table>
-						<tr>
-							<td>Skype</td>
-						</tr>
-						<tr>
-							<td> <input type="text"></input></td>
-						</tr>
-					</table>
-					<br>
-					<table>
-						<tr>
-							<td>Location*</td>
-						</tr>
-						<tr>
-							<td> <input type="text"></input></td>
-						</tr>
-					</table>
-					<br>
-					<table>
-						<tr>
-							<td> Previous Admin Experience* </td>
-						</tr>
-						<tr>
-							<td><textarea></textarea></td>
-						</tr>
-					</table>
-				<div class="formbuttonwrap">
-					<button class="formbutton"> SUBMIT </button>
-				</div>
+					<form name="adminsform" method="post" action="adminsmail.php">
+						<table>
+							<tr>
+								<td> Name* </td>
+							</tr>
+							<tr>
+								<td> <input name="name" type="text"></input></td>
+							</tr>
+						</table>
+						<br>
+						<table>
+							<tr>
+								<td>Email*</td>
+							</tr>
+							<tr>
+								<td> <input name="email" type="text"></input></td>
+							</tr>
+						</table>
+						<br>
+						<table>
+							<tr>
+								<td>Skype</td>
+							</tr>
+							<tr>
+								<td> <input name="skype" type="text"></input></td>
+							</tr>
+						</table>
+						<br>
+						<table>
+							<tr>
+								<td>Location*</td>
+							</tr>
+							<tr>
+								<td> <input name="location" type="text"></input></td>
+							</tr>
+						</table>
+						<br>
+						<table>
+							<tr>
+								<td> Previous Admin Experience* </td>
+							</tr>
+							<tr>
+								<td><textarea name="largebox"></textarea></td>
+							</tr>
+						</table>
+						<input type="submit" value="Submit"></input>
+				</form>
 			</div>
 		</div>
 		<div class= "socmedout">
