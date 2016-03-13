@@ -9,24 +9,27 @@
 		<script>
 		//dummy standings table
 		var standings=[
-		["Bill","12345","1"],
-		["Harry","12567","24"],
-		["joey","5543","3"],
-		["hilary","4452","34"],
-		["Bill","12345","1"],
-		["Harry","12567","24"],
-		["joey","5543","3"],
-		["hilary","4452","34"],
-		["Bill","12345","1"],
-		["Harry","12567","24"],
-		["joey","5543","3"],
-		["hilary","4452","34"]
+		["Bill1","12345","1"],
+		["Harry2","12567","24"],
+		["joey3","5543","3"],
+		["hilary4","4452","34"],
+		["Bill5","12345","1"],
+		["Harry6","12567","24"],
+		["joey7","5543","3"],
+		["hilary8","4452","34"],
+		["Bill9","12345","1"],
+		["Harry10","12567","24"],
+		["joey11","5543","3"],
+		["hilary12","4452","34"]
 		];
 			function loadtable(){
 				var table1=document.getElementById("table1");
 				var table2=document.getElementById("table2");
-				for (i=0;i<standings.length/2;i++){
-					table1.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>'+standings[i][2]+'</td></tr>';
+				for (var i=0;i<standings.length/2;i++){
+					table1.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>('+standings[i][2]+' HGL Points)</td></tr>';
+				}
+				for (i;i<standings.length;i++){
+					table2.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>('+standings[i][2]+' HGL Points)</td></tr>';
 				}
 			}
 		</script>
@@ -68,23 +71,22 @@
 		</div>
 		<br>
 		<br>
-		<div class="maincontent2">
+		<div class="maincontent">
 				<br>
 				<br>
-				<div class="maincontent2wrap">
 					<br>
 					<br>
-					<div class="columnwrapper2">
-						<div class="leftcolumn2">
+					<div class="columnwrapper3">
+						<div class="leftcolumn3">
 							<table class="standingstable" id="table1">
 							</table>
 						</div>
-						<div class="rightcolumn2">
+						<div class="rightcolumn3">
 							<table class="standingstable" id="table2">
 							</table>
 						</div>
 					</div>
-				</div>
+		</div>
 
 
 		<div class= "socmedout">

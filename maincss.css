@@ -352,6 +352,11 @@ div.columnwrapper2 {
 	margin-right:auto;
 	width:1000px;
 }
+div.columnwrapper3 {
+	margin-left:auto;
+	margin-right:auto;
+	width:750px;
+}
 div.leftcolumn {
 	float:left;
 	width:400px;
@@ -362,6 +367,10 @@ div.leftcolumn2 {
 	width:500px;
 	text-align:left;
 }
+div.leftcolumn3 {
+	float:left;
+	text-align:left;
+}
 div.rightcolumn {
 	float:right;
 	width:400px;
@@ -370,6 +379,10 @@ div.rightcolumn {
 div.rightcolumn2 {
 	float:right;
 	width:500px;
+	text-align:right;
+}
+div.rightcolumn3 {
+	float:right;
 	text-align:right;
 }
 div.columnimg {
@@ -383,4 +396,7 @@ img.columnmidpic {
 	height:200px;
 	width:auto;
 	float:left;
+}
+table.standingstable {
+	text-align:left;
 }
