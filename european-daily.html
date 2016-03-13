@@ -5,10 +5,32 @@
 		<link rel="stylesheet" media='screen and (max-width:1049px) and (min-width:650px)' type="text/css" href="medcss.css">
 		<link rel="stylesheet" media='screen and (max-width: 649px)' type="text/css" href="mobilecss.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+		<script>
+			//dummy tournament schedule
+			var schedule=[
+			["03/07 HGL European Daily Series #95","https://battlefy.com/abstract-gaming/hgl-european-daily-series-95/56dd0b2f64b4158d12998cf0/info"],
+			["03/08 HGL European Daily Series #96","https://battlefy.com/abstract-gaming/hgl-european-daily-series-96/56dd0c66d5730d7b126dde33/info"],
+			["03/09 HGL European Daily Series #97","https://battlefy.com/abstract-gaming/hgl-european-daily-series-97/56dd0c6a1a56289612ffd6dc/info"],
+			["03/10 HGL European Daily Series #98","https://battlefy.com/abstract-gaming/hgl-european-daily-series-98/56dd0c6fd20c2b9412056ca7/info"],
+			["03/11 HGL European Daily Series #99","https://battlefy.com/abstract-gaming/hgl-european-daily-series-99/56dd0c74fd1bf47f126c034b/info"],
+			["03/14 HGL European Daily Series #100","https://battlefy.com/abstract-gaming/hgl-european-daily-series-100/56dd0c7c7b37ac7912337872/info"],
+			["03/15 HGL European Daily Series #101","https://battlefy.com/abstract-gaming/hgl-european-daily-series-101/56dd0c7f88fa798712cbc757/info"],
+			["03/16 HGL European Daily Series #102","https://battlefy.com/abstract-gaming/hgl-european-daily-series-102/56dd0c83d20c2b9412056ca9/info"],
+			["03/17 HGL European Daily Series #103","https://battlefy.com/abstract-gaming/hgl-european-daily-series-103/56dd0c8654aeed9012faf65d/info"],
+			["03/18 HGL European Daily Series #104","https://battlefy.com/abstract-gaming/hgl-european-daily-series-104/56dd0c8aa4bcb97b12397887/info"]
+			];
+			function loadtournament(){
+				var scheduletable1=document.getElementById("scheduletable1");
+				var scheduletable2=document.getElementById("scheduletable2");
+				for (i=0;i<5;i++){
+					scheduletable1.innerHTML+='<tr><td><a href="'+schedule[i][1]+'">'+schedule[i][0]+'</a></td></tr>';
+					scheduletable2.innerHTML+='<tr><td><a href="'+schedule[i+5][1]+'">'+schedule[i+5][0]+'</a></td></tr>';
+				}
+			}
+		</script>
 	</head>
 
-	<body class="primary">
+	<body class="primary" onload="loadtournament()">
 		<div class="navbar">
 			<div class="navleft">
 				<p id="navhgl"> HEARTH GAMING LEAGUE</p>
@@ -72,7 +94,16 @@
 			</div>
 			<hr/>
 			<h2>Schedule</h2>
-
+			<div class="columnwrapper2">
+				<div class="leftcolumn2">
+					<table class="scheduletable" id="scheduletable1">
+					</table>
+				</div>
+				<div class="rightcolumn2">
+					<table class="scheduletable" id="scheduletable2">
+					</table>
+				</div>
+			</div>
 		</div>
 		<div class= "socmedout">
 			<div class="socmedwrap">

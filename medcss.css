@@ -197,7 +197,7 @@ div.bannerbuttonwrap{
 /* content */
 div.maincontent {
 	text-align:center;
-	width:75%;
+	width:95%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -247,7 +247,15 @@ a.intextlink {
 hr {
 	margin-top:40px;
 }
-
+table.scheduletable {
+	margin-left:auto;
+	margin-right:auto;
+	border-spacing:0 10px;
+}
+.scheduletable a {
+	color:#ff8d1a;
+	text-decoration:none;
+}
 /* no banner pages */
 div.maincontent2 {
 	text-align:center;
@@ -259,7 +267,7 @@ div.maincontent2wrap {
 	text-align:left;
 }
 .maincontent2 h1 {
-	padding-top:25px;
+	padding-top:50px;
 	text-decoration:underline;
 	font-size:50px;
 }
@@ -354,25 +362,52 @@ div.columnwrapper {
 	margin-right:auto;
 	width:400px;
 }
+div.columnwrapper2 {
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+div.columnwrapper3 {
+	margin-left:auto;
+	margin-right:auto;
+	width:250px;
+}
 div.leftcolumn {
 	float:left;
 	width:400px;
-	
+	text-align:center;
+}
+div.leftcolumn2 {
+	float:left;
+	width:500px;
+	text-align:left;
+}
+div.leftcolumn3 {
+	float:left;
+	text-align:left;
 }
 div.rightcolumn {
-	float:right;
+	float:left;
 	width:400px;
-	
+	text-align:center;
+}
+div.rightcolumn2 {
+	float:right;
+	width:500px;
+	text-align:left;
+}
+div.rightcolumn3 {
+	float:left;
+	text-align:left;
 }
 div.columnimg {
 	height:200px;
 }
-.columnimg img {
-	height:100%;
-	width:auto;
-}
 img.columnmidpic {
 	height:200px;
 	width:auto;
-	
+}
+.columnimg img {
+	height:100%;
+	width:auto;
 }
