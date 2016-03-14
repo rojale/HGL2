@@ -5,10 +5,33 @@
 		<link rel="stylesheet" media='screen and (max-width:1049px) and (min-width:650px)' type="text/css" href="medcss.css">
 		<link rel="stylesheet" media='screen and (max-width: 649px)' type="text/css" href="mobilecss.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+		<title>American Daily - Hearth Gaming League </title>
+		<script>
+			//dummy tournament schedule
+			var schedule=[
+			["03/07 American Daily Series #114","https://battlefy.com/abstract-gaming/hgl-american-daily-series-114/56dcf950dbb7998d1235c57a/info"],
+			["03/08 American Daily Series #115","https://battlefy.com/abstract-gaming/hgl-american-daily-series-115/56dd07e5d4576c7412846bbd/info"],
+			["03/09 American Daily Series #116","https://battlefy.com/abstract-gaming/hgl-american-daily-series-116/56dd07e9d21c078312f1634d/info"],
+			["03/10 American Daily Series #117","https://battlefy.com/abstract-gaming/hgl-american-daily-series-117/56dd07edd20c2b9412056c9e/info"],
+			["03/11 American Daily Series #118","https://battlefy.com/abstract-gaming/hgl-american-daily-series-118/56dd07f34d3c838512d27942/info"],
+			["03/14 American Daily Series #119","https://battlefy.com/abstract-gaming/hgl-american-daily-series-119/56dd07fbd5730d7b126dde31/info"],
+			["03/15 American Daily Series #120","https://battlefy.com/abstract-gaming/hgl-american-daily-series-120/56dd07ffd20c2b9412056ca0/info"],
+			["03/16 American Daily Series #121","https://battlefy.com/abstract-gaming/hgl-american-daily-series-121/56dd0804d20c2b9412056ca2/info"],
+			["03/17 American Daily Series #122","https://battlefy.com/abstract-gaming/hgl-american-daily-series-122/56dd0808d20c2b9412056ca4/info"],
+			["03/18 American Daily Series #123","https://battlefy.com/abstract-gaming/hgl-american-daily-series-123/56dd080d9c93d58412060888/info"]
+			];
+			function loadtournament(){
+				var scheduletable1=document.getElementById("scheduletable1");
+				var scheduletable2=document.getElementById("scheduletable2");
+				for (i=0;i<5;i++){
+					scheduletable1.innerHTML+='<tr><td><a href="'+schedule[i][1]+'">'+schedule[i][0]+'</a></td></tr>';
+					scheduletable2.innerHTML+='<tr><td><a href="'+schedule[i+5][1]+'">'+schedule[i+5][0]+'</a></td></tr>';
+				}
+			}
+		</script>
 	</head>
 
-	<body class="primary">
+	<body class="primary" onload="loadtournament()">
 		<div class="navbar">
 			<div class="navleft">
 				<p id="navhgl"> HEARTH GAMING LEAGUE</p>
@@ -72,7 +95,16 @@
 			</div>
 			<hr/>
 			<h2>Schedule</h2>
-
+			<div class="columnwrapper2">
+				<div class="leftcolumn2">
+					<table class="scheduletable" id="scheduletable1">
+					</table>
+				</div>
+				<div class="rightcolumn2">
+					<table class="scheduletable" id="scheduletable2">
+					</table>
+				</div>
+			</div>
 		</div>
 		<div class= "socmedout">
 			<div class="socmedwrap">

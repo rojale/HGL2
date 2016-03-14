@@ -191,7 +191,7 @@ div.bannerbuttonwrap{
 /* content */
 div.maincontent {
 	text-align:center;
-	width:75%;
+	width:95%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -212,13 +212,19 @@ a.socmed{
 	float:left;
 	margin:10px;
 }
+.socmed img {
+	width:150px;
+	height:auto;
+	padding-left:50px;
+	padding-right:50px;
+}
 .maincontent h2 {
 	text-decoration: underline;
 	font-size:30px;
 	margin-bottom:15px;
 }
 .maincontent p {
-	font-size:25px;
+	font-size:20px;
 	padding:0;
 	margin:0;
 }
@@ -232,6 +238,15 @@ a.intextlink {
 }
 hr {
 	margin-top:40px;
+}
+table.scheduletable {
+	margin-left:auto;
+	margin-right:auto;
+	border-spacing:50px 5px;
+}
+.scheduletable a {
+	color:#ff8d1a;
+	text-decoration:none;
 }
 /* no banner pages */
 div.maincontent2 {
@@ -338,14 +353,42 @@ div.columnwrapper {
 	margin-right:auto;
 	width:1000px;
 }
+div.columnwrapper2 {
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+div.columnwrapper3 {
+	margin-left:auto;
+	margin-right:auto;
+	width:750px;
+}
 div.leftcolumn {
 	float:left;
 	width:400px;
 	text-align:left;
 }
+div.leftcolumn2 {
+	float:left;
+	width:500px;
+	text-align:left;
+}
+div.leftcolumn3 {
+	float:left;
+	text-align:left;
+}
 div.rightcolumn {
 	float:right;
 	width:400px;
+	text-align:right;
+}
+div.rightcolumn2 {
+	float:right;
+	width:500px;
+	text-align:right;
+}
+div.rightcolumn3 {
+	float:right;
 	text-align:right;
 }
 div.columnimg {
@@ -359,4 +402,32 @@ img.columnmidpic {
 	height:200px;
 	width:auto;
 	float:left;
+}
+table.standingstable {
+	text-align:left;
+}
+input[type=submit].formsubmit {
+	color:#ff8d1a;
+	background-color:white;
+	font-family: 'Montserrat', sans-serif;
+	cursor:pointer;
+	cursor:hand;
+	border-radius:6px;
+	margin-left:2px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.formsubmitwrap {
+	display:inline-block;
+}
+
+.formsubmitwrap:hover .formsubmit{
+	color:white;
+	background-color:#ff8d1a;
+	border-width:2px;
+	border-style:solid;
 }

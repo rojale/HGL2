@@ -5,10 +5,37 @@
 		<link rel="stylesheet" media='screen and (max-width:1049px) and (min-width:650px)' type="text/css" href="medcss.css">
 		<link rel="stylesheet" media='screen and (max-width: 649px)' type="text/css" href="mobilecss.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+		<title>Standings - Hearth Gaming League</title>
+		<script>
+		//dummy standings table
+		var standings=[
+		["Bill1","12345","1"],
+		["Harry2","12567","24"],
+		["joey3","5543","3"],
+		["hilary4","4452","34"],
+		["Bill5","12345","1"],
+		["Harry6","12567","24"],
+		["joey7","5543","3"],
+		["hilary8","4452","34"],
+		["Bill9","12345","1"],
+		["Harry10","12567","24"],
+		["joey11","5543","3"],
+		["hilary12","4452","34"]
+		];
+			function loadtable(){
+				var table1=document.getElementById("table1");
+				var table2=document.getElementById("table2");
+				for (var i=0;i<standings.length/2;i++){
+					table1.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>('+standings[i][2]+' HGL Points)</td></tr>';
+				}
+				for (i;i<standings.length;i++){
+					table2.innerHTML+='<tr><td>'+standings[i][0]+'</td><td>'+standings[i][1]+'</td><td>('+standings[i][2]+' HGL Points)</td></tr>';
+				}
+			}
+		</script>
 	</head>
 
-	<body class="primary">
+	<body class="primary" onload="loadtable()">
 		<div class="navbar">
 			<div class="navleft">
 				<p id="navhgl"> HEARTH GAMING LEAGUE</p>
@@ -44,17 +71,21 @@
 		</div>
 		<br>
 		<br>
-		<div class="maincontent2">
+		<div class="maincontent">
 				<br>
-				<br>
-				<div class="maincontent2wrap">
+				<h2>March 2016 Standings </h2>
 					<br>
-					<br>
-					<table>
-						<tr><td>Player</td><td>Battlefy ID</td><td>Points</td></tr>
-						<tr><td> bob</td><td>12382</td><td>5</td></tr>
-					</table>
-				</div>
+					<div class="columnwrapper3">
+						<div class="leftcolumn3">
+							<table class="standingstable" id="table1">
+							</table>
+						</div>
+						<div class="rightcolumn3">
+							<table class="standingstable" id="table2">
+							</table>
+						</div>
+					</div>
+		</div>
 
 
 		<div class= "socmedout">
