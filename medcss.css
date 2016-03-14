@@ -411,3 +411,28 @@ img.columnmidpic {
 	height:100%;
 	width:auto;
 }
+input[type=submit].formsubmit {
+	color:#ff8d1a;
+	background-color:white;
+	font-family: 'Montserrat', sans-serif;
+	cursor:pointer;
+	cursor:hand;
+	border-radius:6px;
+	margin-left:2px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.formsubmitwrap {
+	display:inline-block;
+}
+
+.formsubmitwrap:hover .formsubmit{
+	color:white;
+	background-color:#ff8d1a;
+	border-width:2px;
+	border-style:solid;
+}
