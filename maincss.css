@@ -171,6 +171,11 @@ button.bannerbutton {
 	font-family: 'Montserrat', sans-serif;
 	cursor:pointer;
 	cursor:hand;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .bannerbutton:focus {
 	outline:none;
