@@ -5,7 +5,7 @@
 		<link rel="stylesheet" media='screen and (max-width:1049px) and (min-width:650px)' type="text/css" href="medcss.css">
 		<link rel="stylesheet" media='screen and (max-width: 649px)' type="text/css" href="mobilecss.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+		<title>Standings - Hearth Gaming League</title>
 		<script>
 		//dummy standings table
 		var standings=[
@@ -73,8 +73,7 @@
 		<br>
 		<div class="maincontent">
 				<br>
-				<br>
-					<br>
+				<h2>March 2016 Standings </h2>
 					<br>
 					<div class="columnwrapper3">
 						<div class="leftcolumn3">

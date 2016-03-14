@@ -212,13 +212,19 @@ a.socmed{
 	float:left;
 	margin:10px;
 }
+.socmed img {
+	width:150px;
+	height:auto;
+	padding-left:50px;
+	padding-right:50px;
+}
 .maincontent h2 {
 	text-decoration: underline;
 	font-size:30px;
 	margin-bottom:15px;
 }
 .maincontent p {
-	font-size:25px;
+	font-size:20px;
 	padding:0;
 	margin:0;
 }
@@ -399,4 +405,29 @@ img.columnmidpic {
 }
 table.standingstable {
 	text-align:left;
+}
+input[type=submit].formsubmit {
+	color:#ff8d1a;
+	background-color:white;
+	font-family: 'Montserrat', sans-serif;
+	cursor:pointer;
+	cursor:hand;
+	border-radius:6px;
+	margin-left:2px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.formsubmitwrap {
+	display:inline-block;
+}
+
+.formsubmitwrap:hover .formsubmit{
+	color:white;
+	background-color:#ff8d1a;
+	border-width:2px;
+	border-style:solid;
 }
